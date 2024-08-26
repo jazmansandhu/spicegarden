@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <title>About Us - Spicy Garden</title>
+</head>
+
+<body>
+    <!-- Include the navbar.html in each page -->
+    <div id="navbar-container"></div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div id="hero_content">
+            <h1>About Us</h1>
+            <h2>Discover Our Story</h2>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>Our Journey</h2>
+                <p>Welcome to Spicy Garden, where we bring the flavors of the world to your plate. Our journey began with a passion
+                    for creating mouth-watering dishes that tantalize your taste buds. Every ingredient we use is
+                    carefully selected to ensure the highest quality, and each dish is prepared with love and care.
+                </p>
+                <p>At Spicy Garden, we believe in more than just serving food. We strive to create an experience that is memorable,
+                    combining delicious meals with a warm, inviting atmosphere. Whether you are here for a family
+                    dinner, a romantic date, or a celebration with friends, our goal is to make every visit special.
+                </p>
+                <p>Thank you for being part of our story. We look forward to serving you!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>&copy; 2024 Spicy Garden. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

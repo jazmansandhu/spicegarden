@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Breakfast Menu</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url(images/bg.avif);
+            background-size: cover;
+            background-color: #312d2d;
+            color: #333;
+            margin: 0;
+            padding-top: 70px; /* Fixed padding-top value */
+        }
+
+        #breakfast_menu {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #breakfast_menu h1 {
+            text-align: center;
+            color: #ff6600;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+
+        .menu_items_container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Fixed two columns */
+            gap: 30px;
+        }
+
+        .menu_item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .menu_item img {
+            width: 200px; /* Set a fixed width */
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .item_info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item_info h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .item_info p {
+            margin: 5px 0;
+            font-size: 1.2rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+
+        <nav id="navbar">
+            <img src="images/spicy.png" alt="Spicy Garden Logo">
+            <!-- <h1>Spicy Garden</h1> -->
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                
+            </ul>
+            <div id="phone">
+                <a href="tel:+917696797956">+91 7696797956</a>
+            </div>
+        </nav>
+        <div id="mobile_menu">
+
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- Breakfast Menu Section -->
+    <div id="breakfast_menu">
+        <h1>Breakfast Menu</h1>
+        <div class="menu_items_container">
+            <div class="menu_item">
+                <img src="images/alooprantha.jpg" alt="Aloo Prantha">
+                <div class="item_info">
+                    <h2>Aloo Prantha</h2>
+                    <p>50/-</p>
+                </div>
+            </div>
+
+            <div class="menu_item">
+                <img src="images/gobiprantha.jpg" alt="Gobi Prantha">
+                <div class="item_info">
+                    <h2>Gobi Prantha</h2>
+                    <p>60/-</p>
+                </div>
+            </div>
+
+            <div class="menu_item">
+                <img src="images/pannerprantha.jpg" alt="Paneer Prantha">
+                <div class="item_info">
+                    <h2>Paneer Prantha</h2>
+                    <p>80/-</p>
+                </div>
+            </div>
+
+            <div class="menu_item">
+                <img src="images/mixprantha.webp" alt="Mix Prantha">
+                <div class="item_info">
+                    <h2>Mix Prantha</h2>
+                    <p>50/-</p>
+                </div>
+            </div>
+
+            <div class="menu_item">
+                <img src="images/cheese_naan.jpg" alt="Cheese Naan">
+                <div class="item_info">
+                    <h2>Cheese Naan</h2>
+                    <p>100/-</p>
+                </div>
+            </div>
+
+            <div class="menu_item">
+                <img src="images/aloo_naan.jpg" alt="Aloo Naan">
+                <div class="item_info">
+                    <h2>Aloo Naan</h2>
+                    <p>80/-</p>
+                </div>
+            </div>
+
+            <div class="menu_item">
+                <img src="images/chole_bhature.png" alt="Chole Bhature">
+                <div class="item_info">
+                    <h2>Chole Bhature</h2>
+                    <p>60/-</p>
+                </div>
+            </div>
+
+            <div class="menu_item">
+                <img src="images/chole_puri.jpg" alt="Chole Puri">
+                <div class="item_info">
+                    <h2>Chole Puri</h2>
+                    <p>60/-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
